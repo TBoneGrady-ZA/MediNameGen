@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(/images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background: radial-gradient(transparent 75%, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1, h4, h5 {
+    font-family:'Jacquard 24', sans-serif;
+}
+
+.container p {
+    font-family: 'MedievalSharp', sans-serif;
+}
+
+.container {
+    padding: 40px;
+    padding-bottom: 120px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    border: 2px solid rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    row-gap: 1rem;
+    backdrop-filter: blur(5px);
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 600;
+    }
+    h4, h5 {
+        font-size: 3.6rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+}
+
+.genBtn {
+    width: 50%;
+    height: 60px;
+    margin: 25px 0px;
+    background-color: #be794a99;
+    border-radius: .5rem;
+    border: 2px solid #000;
+    font-size: 3.2rem;
+    font-family: "MedievalSharp", sans-serif;
+    cursor: pointer;
+}
+
+#userName {
+    width: 60%;
+    height: 4rem;
+    font-family: "MedievalSharp",sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    border-radius: 1.2rem;
+    border: 1px solid rgb(100, 83, 60);
+    margin: 12px;
+}
+
+#userName::placeholder {
+    font-size: 2rem;
+}
+
+#display  {
+    position: relative;
+    margin: 0 auto;
+    width: 75%;
+    height: 42%;
+    background-color: #9999;
+    font-family: "MedievalSharp",sans-serif;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2rem;
+    border: 2px solid rgb(0, 0, 0);
+    h1{
+        font-size: 2rem !important;
+        font-family: "MedievalSharp", sans-serif;
+    }
+}
+
+.atri {
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0000008e;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    display: none;
+}
